@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Web-Page to Markdown Maverick",
+  "version": "1.0",
+  "description": "Downloads markdown content from r.jina.ai for the current page",
+  "permissions": ["activeTab", "downloads", "storage"],
+  "host_permissions": ["https://r.jina.ai/*"],
+  "action": {
+    "default_icon": "icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
