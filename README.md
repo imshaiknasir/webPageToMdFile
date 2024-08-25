@@ -1,3 +1,5 @@
+![Cover Image](cover.jpeg)
+
 # Web-Page to Markdown Maverick
 
 ## Introduction
